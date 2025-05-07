@@ -1,0 +1,22 @@
+.bookList{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+.book{
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 10px;
+}
+.bookTitle{
+    cursor: pointer;
+    color: blue;
+}
+.error{
+    color: red;
+}
+button{
+    margin-top: 20px;
+    padding: 10px;
+    
+}
