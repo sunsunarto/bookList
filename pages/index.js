@@ -27,7 +27,6 @@ export default function Home({ books, error }) {
               <Link href={`/books/${book.id}`}>
                 <h2 className = "bookTitle">{book.title}</h2>
               </Link>
-              <h3>{book.author}</h3>
               <p>{book.description}</p>
             </div>
           ))}

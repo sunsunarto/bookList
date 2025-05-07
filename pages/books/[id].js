@@ -28,7 +28,6 @@ export default function BookDetail({ book }) {
   return (
     <div>
       <h1>{book.title}</h1>
-      <h2>Author: {book.author}</h2>
       <p>{book.description}</p>
       <p>Published on: {book.publishDate}</p>
       <p>Pages: {book.pageCount}</p>
