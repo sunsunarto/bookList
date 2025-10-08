@@ -1,6 +1,5 @@
 import React from "react";
 import Link from "next/link";
-import "../index.css";
 
 export async function getStaticPaths() {
   const res = await fetch("https://fakerestapi.azurewebsites.net/api/v1/Books");
