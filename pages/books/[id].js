@@ -32,7 +32,7 @@ export default function BookDetail({ book }) {
       <p>Published on: {book.publishDate}</p>
       <p>Pages: {book.pageCount}</p>
       <Link href="/">
-        <button>Go Back</button>
+        <button className="goback">Go Back</button>
       </Link>
     </div>
   );

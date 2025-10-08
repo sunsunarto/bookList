@@ -18,14 +18,22 @@ export async function getServerSideProps() {
 export default function Home({ books, error }) {
   return (
     <div>
-      <h1>Book List</h1>
+      <div className="header">
+        <div className="left">
+          <div className="circle" />
+          <h1>Book List</h1>
+        </div>
+        <div className="right">
+          <button>Cart</button>
+        </div>
+      </div>
       {error && <p clsassName="error">Error: {error}</p>}
       {books.length > 0 ? (
         <div className="bookList">
           {books.map((book) => (
-            <div key={book.id} className = "book" >
+            <div key={book.id} className="book" >
               <Link href={`/books/${book.id}`}>
-                <h2 className = "bookTitle">{book.title}</h2>
+                <h2 className="bookTitle">{book.title}</h2>
               </Link>
               <p>{book.description}</p>
             </div>
