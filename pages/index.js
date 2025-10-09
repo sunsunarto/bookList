@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Link from "next/link";
-import PayCard from "./component/card.jsx";
+import PayCard from "../component/card.jsx";
 
 export async function getServerSideProps() {
   try {
